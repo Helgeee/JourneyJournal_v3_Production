@@ -1,0 +1,185 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'ngx-toastr/toastr';
+
+
+$primaryColor: rgba(72, 39, 108, 1);
+$indexTitleColor:rgba(155, 81, 224, 1);
+$textColor: rgba(97, 100, 107, 1);
+$textColorBlack: rgb(0, 0, 0);
+$frameСolor: rgba(175, 177, 182, 1);
+
+
+// *{
+//     outline: 4px solid green !important;
+// }
+
+@layer ribbon {
+  .notes-ribbon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+  }
+}
+
+@layer components {
+        // стили кнопок 
+        .button{
+            border-radius: 50px;
+            background: $primaryColor;
+            font-family: "Mulish", sans-serif;
+            color: #ffffff;
+            border:none;
+            cursor: pointer;
+            transition: background-color 0.5s, transform 0.5s;
+            &__submit {
+                width: 100%;
+                height: 55px;
+                color:#ffffff;
+                font-size: 16px;
+                text-decoration: none;
+            }&__index{
+                border-radius: 50px;
+                width: 300px;
+                height: 40px;
+                font-weight: 800;
+                font-size: 16px;
+                color: #fff;
+            }
+            &-map{
+              display: grid;
+              grid-template-columns: 100px 30px;
+              justify-content: center;
+              align-items: center;
+
+             
+              font-family: "Mulish", sans-serif;
+              width: 280px;
+              height: 30px;
+              font-size: 15px;
+              font-weight: 500;
+              text-decoration: none;
+              background: $primaryColor;
+            }
+            &-mt{
+              margin-top: 40px;
+            }
+        }
+
+        // меню на странице входа и регистрации
+        .indexbar{
+          display: flex;
+          flex-direction: row;
+          text-decoration: none;
+          list-style-type: none;
+          gap: 22px;
+        }
+        .indexbar-element{
+          text-decoration: none;
+          font-family: "Mulish", sans-serif;
+          font-weight: 800;
+          font-size: 18px;
+          margin: 0;
+          padding: 0;
+        }
+        .indexbar-btn{
+            height: 38px;
+            width: 150px ;
+            margin: 10px 11px ;
+        }
+        .mini{
+            width: 200px;
+            height: 25px;
+            background-repeat: 5px;
+            font-family: "Mulish", sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .main {
+            font-family: "Mulish", sans-serif;
+            width: 280px;
+            height: 30px;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-top: 40px;
+        }
+        .ribbon {
+            &__buttons{
+                z-index: 120;
+                grid-template-columns: 345px 345px;
+                justify-content: center;
+                grid-gap: 20px;
+                display: grid;
+                place-items: center;
+                background: none;
+            }
+        }
+        .button:hover{
+            background: $textColor;
+            
+            transform: scale(1.1);
+        }
+        .button:hover::before {
+          opacity: 1;
+          transform: translateX(5px);
+        }
+        .typebtns {
+          width: 260px;
+          height: 40px;
+          margin: auto;
+          font-family: "Mulish", sans-serif;
+          border: 2px solid rgba(97, 100, 107, 1);
+          border-radius: 10px;
+          background-color: transparent;
+        
+          text-align: center;
+          font-size: 14px;
+          font-weight: 600;
+        
+          color: rgba(97, 100, 107, 1);
+          text-decoration: none;
+          transition: background-color 0.5s, transform 0.5s;
+        }
+        .typebtns:hover{
+          color: rgba(72, 39, 108, 1);
+          border: 3px solid rgba(72, 39, 108, 1);
+          transform: scale(1.1);
+        }
+        
+        .typebtns:hover::before {
+          opacity: 1;
+          transform: translateX(5px);
+        }
+
+
+        .yandex-btn{
+          display: flex;
+          flex-direction: row;
+          gap: 22px;
+        }
+        .yandex-label{
+          margin-top: 8px;
+        }
+        .yandex-btn svg{
+          padding: 3px;
+        }
+
+
+
+        .primaryColor{color: rgba(72, 39, 108, 1);}
+        .indexTitleColor{color:rgba(155, 81, 224, 1);}
+        .textColor{color: rgba(97, 100, 107, 1);} 
+        .textColorBlack{color:  rgb(0, 0, 0);}
+        .frameСolor{color:rgba(175, 177, 182, 1);}
+    
+} 
+
+    

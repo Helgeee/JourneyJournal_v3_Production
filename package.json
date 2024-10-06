@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/mapped-types": "*",
+    "@nestjs/passport": "^10.0.3",
+    "argon2": "^0.40.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.13",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/passport-local": "^1.0.38"
+  },
+  
+  
+"scripts": {
+  "start:both": "concurrently \"cd server && npm start run:dev\" \"cd client && ng serve\""
+}
+
+
+}

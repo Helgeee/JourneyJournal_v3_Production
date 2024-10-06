@@ -1,0 +1,5 @@
+<div class="modal" (click)="close()" [ngClass]="{ 'open': open }">
+    <div class="modal-content" (click)="preventClosing($event)" (keydown.escape)="close()">
+
+    </div>
+</div>

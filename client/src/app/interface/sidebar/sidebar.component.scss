@@ -1,0 +1,134 @@
+.sidebar-menu {
+    position: fixed;
+    background: none;
+    top: 180px;
+    left: 100px;
+    width: 109px;
+    height: 500px;
+    display: flex;
+    justify-content: center;  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    .textMenu {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 12px;
+    }
+}
+
+
+.sidebar-element  {
+  align-items: center;
+  background: none ;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s, transform 0.3s;
+  font-family: "Mulish", sans-serif;
+  // font-size: 18px;
+  color: rgba(97, 100, 107, 1);
+}
+
+.sidebar-element:hover {
+  transition:  0.50s;
+  color: rgba(73, 40, 109, 1); /* Желаемый цвет */
+  transform: translateX(5px);
+}
+
+.sidebar-element svg:hover *  {
+  fill: rgba(73, 40, 109, 1); /* Желаемый цвет */
+}
+.sidebar-element:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+
+
+// КНОПКА ВЫХОДА  
+.sidebar-extbtn {
+  display: block;
+  margin-left: 16px;
+  color: rgba(97, 100, 107, 1);
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+}
+.sidebar-extbtn svg {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  transition: fill 0.3s, transform 0.3s;
+}
+.sidebar-extbtn label {
+  display: block;
+  margin-top: -5px;
+}
+.sidebar-extbtn::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.sidebar-extbtn:hover {
+  color:rgba(73, 40, 109, 1);
+  transform: translateX(5px);
+}
+
+.sidebar-extbtn svg:hover *  {
+  fill: rgba(73, 40, 109, 1); /* Желаемый цвет */
+}
+.sidebar-extbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+
+
+
+
+// меню на странице входа и регистрации
+
+// .indexbar{
+//   // margin: 0 ;
+//   // margin-top: 100px;
+  
+//   margin-left: 270px ;
+//   display: flex;
+//   justify-content: flex-end ;
+//   flex-direction: row;
+//   text-decoration: none;
+// }
+// ul {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+
+// }
+// a  {
+// text-decoration: none;
+// padding: 15px;
+// font-family: "Mulish", sans-serif;
+// font-weight: 500;
+// font-size: 18px;
+// }
+
+
+
+
+
+

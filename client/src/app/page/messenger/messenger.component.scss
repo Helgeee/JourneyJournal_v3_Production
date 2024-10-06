@@ -1,0 +1,188 @@
+.messenger{
+ 
+    
+    &-container{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 710px;
+    min-height: 800px;
+    background-color:rgba(249, 249, 249, 0.89);
+
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px; 
+    }
+    &-bar{
+        
+        display: grid;
+        grid-template-columns: 450px 100% ;
+        grid-gap: 100px;
+    }
+    &-search{
+        position: relative;
+        display: grid;
+        grid-template-columns: 40px 300px ;
+        width: 370px;
+        margin-left: 10px;
+
+        grid-gap: 10px  ;
+        align-items: center;
+
+        border: 1px solid #AFB1B6 ;
+        padding: 2px 2px 2px 2px;
+        border-radius: 10px; 
+        background: transparent;
+    }
+    &-search-imput{
+        width: 360px;
+        height: 25px; 
+        
+        outline: 0;
+        outline-offset: 0;
+        background: transparent;  
+        border: none;      
+        align-items: center ;
+        color: rgba(73, 40, 109, 1);
+        font-weight: 600;
+
+    }&-barbtn{
+
+      font-family: "Mulish", sans-serif;
+      margin: 0px;
+      padding: 0px;
+      background-color: transparent;
+      margin-left: 20px;
+      color: #AFB1B6 ;
+      transition: color 0.3s, transform 0.3s;
+      text-decoration: none;
+      border: none;
+      
+    }
+    &-barbtn svg{
+      fill: rgba(73, 40, 109, 1); 
+    }
+      &-barbtn:before {
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    &-barbtn:hover {
+      color:rgba(73, 40, 109, 1);
+      transform: scale(1.1);
+      
+    }
+    
+    &-barbtn svg:hover *  {
+      fill: #AFB1B6; /* Желаемый цвет */
+    }
+    &-barbtn:hover::before {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+
+
+    &-bigbtn{
+      
+      margin-top: 450px;
+      margin-left: 570px;
+
+      
+      background-color: transparent;
+      
+      color: #AFB1B6 ;
+      transition: color 0.3s, transform 0.3s;
+      text-decoration: none;
+      border: none;
+
+    }
+    &-bigbtn:before {
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    &-bigbtn:hover {
+      color:rgba(73, 40, 109, 1);
+      transform: scale(1.1);
+      
+    }
+    &-bigbtn:hover::before {
+      opacity: 1;
+      transform: translateX(5px);
+    }
+    &-form{
+      position: relative;
+    }
+
+
+
+
+    
+
+
+
+}
+
+
+.messenger{
+    &-messe-form{
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+
+        display: flex;
+        margin-top: 30px;
+      
+        margin-left: 50px;
+        min-width: 700px;
+        gap: 40px;
+        text-align: center;
+    }
+    &-messe-endblock{
+      display: flex;
+      align-items: center;
+      margin-left: 350px;
+    }
+
+    &-form-starbtn {
+        
+        margin-left: 26px;
+        padding: 0px;
+        background-color: transparent;
+  
+        transition: color 0.3s, transform 0.3s;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        
+      }
+      &-form-starbtn svg{
+        fill: rgba(73, 40, 109, 1); 
+      }
+        &-tripsbtn:before {
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      &-form-starbtn:hover {
+        color:rgba(73, 40, 109, 1);
+        transform: scale(1.1);
+        
+      }
+      
+      &-form-starbtn svg:hover *  {
+        fill: #ec00b9; /* Желаемый цвет */
+      }
+      &-form-starbtn:hover::before {
+        opacity: 1;
+        transform: translateX(5px);  
+      }
+      &-form-starbtn:active svg {
+        fill:rgba(155, 81, 224, 1);  /* Цвет  если нужно изменить */
+      }
+    
+
+}

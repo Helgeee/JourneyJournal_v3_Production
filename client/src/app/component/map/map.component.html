@@ -1,0 +1,19 @@
+
+<button (click)="openModal()">Open Modal</button>
+
+    <div *ngIf="isModalOpen" class="modal modal--2" data-target="me-popup">
+        
+            <div class="modalMap__contents">
+                <span class="close" (click)="closeModal()">&times;</span>
+                <form class="searchMap__form">
+                    <div class="searchMap__wrapper">
+                        <img class="searchMap__icon" src="/src/icons/Search.svg" alt="Search">
+                        <input class="searchMap__input" type="text" placeholder=" Know where you wanna go?">
+                        <img class="searchMap__avatar" src="/src/img/profile/Ellipse 25.svg" alt="Search">    
+                    </div>        
+                </form>
+                <button id="createNote" class="button button__main button__center">Создать заметку</button>
+            </div>  
+    </div>
+
+<button (click)="closeModal()">Close</button>

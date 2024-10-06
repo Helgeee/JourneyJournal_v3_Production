@@ -1,0 +1,188 @@
+.profile{
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; 
+
+    &__container{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        
+        justify-content: space-between;
+        flex-direction: column; 
+    }
+    &-avatar{
+        display: block;
+        margin-top: 60px;
+        height: 56px;
+        width: 56px;
+        
+        border-radius: 50px;
+    }
+    &-statistVisit{
+        max-width: 300px;
+        grid-template-columns: 110px 110px;
+        flex-direction: row;
+        column-gap: 50px;
+        justify-content: center;
+        display: grid;
+
+        // color: $primaryColor;
+    }
+    &__statist  {
+        max-width: 400px;
+        grid-template-columns: 120px 140px 120px;
+        column-gap: 5px;
+        flex-direction: row;
+        justify-content: center;
+        display: grid;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133%;
+        letter-spacing: 0.02em;
+        color: #61646b;
+        // color: $textColor;
+    }
+    &__buttons{
+        margin: 10px;
+        grid-template-columns: 200px 200px;
+        justify-content: center;
+        grid-gap: 40px;
+        display: grid;
+        
+    }
+    &__bigtitle{
+        margin-top: 10px;
+        text-align: center;
+        // color: $primaryColor;
+        text-transform: uppercase;
+    }
+    &-stattitle{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 133%;
+        letter-spacing: 0.02em;
+        color: #61646b;
+      }
+      
+    &-title{
+        font-weight: 500;
+        color: rgba(73, 40, 109, 1);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+      }
+    
+    
+}
+
+
+
+.line{
+    margin-top: 60px;
+    width: 475px;
+    height: 1px;
+    background: #EFEFF0;
+
+    position: relative; top: 50%; left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    justify-content: center;
+    display: flex;
+}
+
+.ribbon-wrapper{
+    margin-left: 12px;
+    max-width: 1000px;
+    margin-top: 20px ;
+    display: flex;
+    align-items: center;
+}
+  
+  
+
+
+
+
+
+
+
+.mini-notes-form{
+    border-radius: 12px;
+    padding: 10px 10px 10px 10px;
+    width: 240px;
+    height: 200px;
+    border: 2px solid #efeff0;
+    margin: 10px;
+   
+    
+   
+    &-coordinates{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 133%;
+      letter-spacing: 0.02em;
+      color: #61646b;
+    }
+    
+    &-title{
+      font-weight: 500;
+      color: rgba(73, 40, 109, 1);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.01em;
+    }
+
+    &-starbtn {
+      margin: 0px;
+      padding: 0px;      
+      background-color: transparent;
+      transition: color 0.3s, transform 0.3s;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      
+    }
+    &-starbtn svg{
+      fill: rgba(73, 40, 109, 1); 
+    }
+      &-tripsbtn:before {
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    &-starbtn:hover {
+      color:rgba(73, 40, 109, 1);
+      transform: scale(1.1);
+      
+    }
+    
+    &-starbtn svg:hover *  {
+      fill: #ec00b9; /* Желаемый цвет */
+    }
+    &-starbtn:hover::before {
+      opacity: 1;
+      transform: translateX(5px);  
+    }
+    &-starbtn:active svg {
+      fill:rgba(155, 81, 224, 1);  /* Цвет  если нужно изменить */
+    } 
+
+
+    
+    
+
+}
+

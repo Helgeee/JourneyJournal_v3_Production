@@ -1,0 +1,72 @@
+
+.mini-notes-form{
+    border-radius: 12px;
+    padding: 10px 10px 10px 10px;
+    width: 240px;
+    height: 200px;
+    border: 2px solid #efeff0;
+    margin: 10px;
+    
+   
+    &-coordinates{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 133%;
+      letter-spacing: 0.02em;
+      color: #61646b;
+    }
+    
+    &-title{
+      font-weight: 500;
+      color: rgba(73, 40, 109, 1);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.01em;
+    }
+
+    &-starbtn {
+      margin: 0px;
+      padding: 0px;      
+      background-color: transparent;
+      transition: color 0.3s, transform 0.3s;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      
+    }
+    &-starbtn svg{
+      fill: rgba(73, 40, 109, 1); 
+    }
+      &-tripsbtn:before {
+      position: absolute;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    &-starbtn:hover {
+      color:rgba(73, 40, 109, 1);
+      transform: scale(1.1);
+      
+    }
+    
+    &-starbtn svg:hover *  {
+      fill: #ec00b9; /* Желаемый цвет */
+    }
+    &-starbtn:hover::before {
+      opacity: 1;
+      transform: translateX(5px);  
+    }
+    &-starbtn:active svg {
+      fill:rgba(155, 81, 224, 1);  /* Цвет  если нужно изменить */
+    } 
+
+
+    
+    
+
+}
+
