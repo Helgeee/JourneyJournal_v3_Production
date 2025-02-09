@@ -7,17 +7,13 @@
 
 @import 'ngx-toastr/toastr';
 
-
-$primaryColor: rgba(72, 39, 108, 1);
-$indexTitleColor:rgba(155, 81, 224, 1);
-$textColor: rgba(97, 100, 107, 1);
-$textColorBlack: rgb(0, 0, 0);
-$frameСolor: rgba(175, 177, 182, 1);
-
-
-// *{
-//     outline: 4px solid green !important;
-// }
+// @import 
+//     'scss/fonts',
+//     'scss/globals',
+//     'scss/media',
+//     'scss/mixins',
+//     'scss/utils',
+//     'scss/variables';
 
 @layer ribbon {
   .notes-ribbon{
@@ -27,6 +23,14 @@ $frameСolor: rgba(175, 177, 182, 1);
     place-items: center;
   }
 }
+
+
+$primaryColor: rgba(72, 39, 108, 1);
+$indexTitleColor:rgba(155, 81, 224, 1);
+$textColor: rgba(97, 100, 107, 1);
+$textColorBlack: rgb(0, 0, 0);
+$frameСolor: rgba(175, 177, 182, 1);
+
 
 @layer components {
         // стили кнопок 
@@ -171,15 +175,35 @@ $frameСolor: rgba(175, 177, 182, 1);
         .yandex-btn svg{
           padding: 3px;
         }
-
-
-
-        .primaryColor{color: rgba(72, 39, 108, 1);}
-        .indexTitleColor{color:rgba(155, 81, 224, 1);}
-        .textColor{color: rgba(97, 100, 107, 1);} 
-        .textColorBlack{color:  rgb(0, 0, 0);}
-        .frameСolor{color:rgba(175, 177, 182, 1);}
-    
 } 
 
     
+@layer button {
+  .button{
+    border-radius: 50px;
+    background: $primaryColor;
+    font-family: "Mulish", sans-serif;
+    color: #ffffff;
+    border:none;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+  
+  }
+} 
+
+
+
+
+@layer title{
+  .title{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Mulish", sans-serif;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column; 
+    color: rgba(97, 100, 107, 1);
+  }
+}
+
+

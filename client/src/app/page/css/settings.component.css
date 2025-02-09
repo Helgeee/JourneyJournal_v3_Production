@@ -1,0 +1,60 @@
+.setting {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.setting__menu {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.list-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.settingbtn {
+  margin: 10px;
+  font-family: "Mulish", sans-serif;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(97, 100, 107);
+  text-decoration: none;
+  transition: background-color 0.5s, transform 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingbtn svg {
+  margin-right: 0px;
+}
+
+.settingbtn:hover {
+  color: rgb(72, 39, 108);
+  transform: scale(1.1);
+  border: none;
+}
+
+.settingbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.settingbtn-title {
+  text-decoration: none;
+  padding: 15px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgb(73, 40, 109);
+}/*# sourceMappingURL=settings.component.css.map */

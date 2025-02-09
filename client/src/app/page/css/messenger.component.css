@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.messenger-container {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 710px;
+  min-height: 800px;
+  background-color: rgba(249, 249, 249, 0.89);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+.messenger-bar {
+  display: grid;
+  grid-template-columns: 450px 100%;
+  grid-gap: 100px;
+}
+.messenger-search {
+  position: relative;
+  display: grid;
+  grid-template-columns: 40px 300px;
+  width: 370px;
+  margin-left: 10px;
+  grid-gap: 10px;
+  align-items: center;
+  border: 1px solid #AFB1B6;
+  padding: 2px 2px 2px 2px;
+  border-radius: 10px;
+  background: transparent;
+}
+.messenger-search-imput {
+  width: 360px;
+  height: 25px;
+  outline: 0;
+  outline-offset: 0;
+  background: transparent;
+  border: none;
+  align-items: center;
+  color: rgb(73, 40, 109);
+  font-weight: 600;
+}
+.messenger-barbtn {
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  margin-left: 20px;
+  color: #AFB1B6;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  border: none;
+}
+.messenger-barbtn svg {
+  fill: rgb(73, 40, 109);
+}
+.messenger-barbtn:before {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.messenger-barbtn:hover {
+  color: rgb(73, 40, 109);
+  transform: scale(1.1);
+}
+.messenger-barbtn svg:hover * {
+  fill: #AFB1B6; /* Желаемый цвет */
+}
+.messenger-barbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.messenger-bigbtn {
+  margin-top: 450px;
+  margin-left: 570px;
+  background-color: transparent;
+  color: #AFB1B6;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  border: none;
+}
+.messenger-bigbtn:before {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.messenger-bigbtn:hover {
+  color: rgb(73, 40, 109);
+  transform: scale(1.1);
+}
+.messenger-bigbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.messenger-form {
+  position: relative;
+}
+
+.messenger-messe-form {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 50px;
+  min-width: 700px;
+  gap: 40px;
+  text-align: center;
+}
+.messenger-messe-endblock {
+  display: flex;
+  align-items: center;
+  margin-left: 350px;
+}
+.messenger-form-starbtn {
+  margin-left: 26px;
+  padding: 0px;
+  background-color: transparent;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.messenger-form-starbtn svg {
+  fill: rgb(73, 40, 109);
+}
+.messenger-tripsbtn:before {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.messenger-form-starbtn:hover {
+  color: rgb(73, 40, 109);
+  transform: scale(1.1);
+}
+.messenger-form-starbtn svg:hover * {
+  fill: #ec00b9; /* Желаемый цвет */
+}
+.messenger-form-starbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.messenger-form-starbtn:active svg {
+  fill: rgb(155, 81, 224); /* Цвет  если нужно изменить */
+}/*# sourceMappingURL=messenger.component.css.map */

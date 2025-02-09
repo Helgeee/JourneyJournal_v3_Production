@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.sidebar-menu {
+  position: fixed;
+  background: none;
+  top: 180px;
+  left: 100px;
+  width: 109px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+.sidebar-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-menu li {
+  margin-bottom: 5px;
+}
+.sidebar-menu .textMenu {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.sidebar-element {
+  align-items: center;
+  background: none;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 5px;
+  transition: color 0.3s, transform 0.3s;
+  font-family: "Mulish", sans-serif;
+  color: rgb(97, 100, 107);
+}
+
+.sidebar-element:hover {
+  transition: 0.5s;
+  color: rgb(73, 40, 109); /* Желаемый цвет */
+  transform: translateX(5px);
+}
+
+.sidebar-element svg:hover * {
+  fill: rgb(73, 40, 109); /* Желаемый цвет */
+}
+
+.sidebar-element:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.sidebar-extbtn {
+  display: block;
+  margin-left: 16px;
+  color: rgb(97, 100, 107);
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+}
+
+.sidebar-extbtn svg {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  transition: fill 0.3s, transform 0.3s;
+}
+
+.sidebar-extbtn label {
+  display: block;
+  margin-top: -5px;
+}
+
+.sidebar-extbtn::before {
+  content: attr(data-text);
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.sidebar-extbtn:hover {
+  color: rgb(73, 40, 109);
+  transform: translateX(5px);
+}
+
+.sidebar-extbtn svg:hover * {
+  fill: rgb(73, 40, 109); /* Желаемый цвет */
+}
+
+.sidebar-extbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}/*# sourceMappingURL=sidebar.component.css.map */

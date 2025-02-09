@@ -1,0 +1,59 @@
+@charset "UTF-8";
+.mini-notes-form {
+  border-radius: 12px;
+  padding: 10px 10px 10px 10px;
+  width: 240px;
+  height: 200px;
+  border: 2px solid #efeff0;
+  margin: 10px;
+}
+.mini-notes-form-coordinates {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  color: #61646b;
+}
+.mini-notes-form-title {
+  font-weight: 500;
+  color: rgb(73, 40, 109);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+}
+.mini-notes-form-starbtn {
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.mini-notes-form-starbtn svg {
+  fill: rgb(73, 40, 109);
+}
+.mini-notes-form-tripsbtn:before {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.mini-notes-form-starbtn:hover {
+  color: rgb(73, 40, 109);
+  transform: scale(1.1);
+}
+.mini-notes-form-starbtn svg:hover * {
+  fill: #ec00b9; /* Желаемый цвет */
+}
+.mini-notes-form-starbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+.mini-notes-form-starbtn:active svg {
+  fill: rgb(155, 81, 224); /* Цвет  если нужно изменить */
+}/*# sourceMappingURL=mini-notes-form.component.css.map */

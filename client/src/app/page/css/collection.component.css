@@ -1,0 +1,114 @@
+@charset "UTF-8";
+.trips-container {
+  margin-top: 70px;
+  display: grid;
+}
+.trips-created {
+  grid-column: a;
+  display: flex;
+  max-width: 650px;
+  height: 40px;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.trips-ribbon {
+  margin-left: 7px;
+  margin-top: 10px;
+  display: grid;
+  grid-column: b;
+}
+.trips-forms {
+  display: flex;
+  max-width: 650px;
+  height: 40px;
+  justify-content: start;
+  margin-top: 40px;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.trips-title {
+  display: block;
+  height: 30px;
+  width: 100px;
+  color: rgb(73, 40, 109);
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.trips-input {
+  width: 400px;
+  height: 10px;
+  padding: 10px 10px 10px 10px;
+  outline: 0;
+  outline-offset: 0;
+  border-radius: 10px;
+  font-family: "Mulish", sans-serif;
+  color: rgb(73, 40, 109);
+  border: 1px solid #AFB1B6;
+  background: transparent;
+}
+.trips-tripsbtn {
+  font-family: "Mulish", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  margin-left: 16px;
+  color: #AFB1B6;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+  border: none;
+}
+.trips-tripsbtn svg {
+  fill: rgb(73, 40, 109);
+}
+.trips-tripsbtn:before {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.trips-tripsbtn:hover {
+  color: rgb(73, 40, 109);
+  transform: scale(1.1);
+}
+.trips-tripsbtn svg:hover * {
+  fill: #AFB1B6; /* Желаемый цвет */
+}
+.trips-tripsbtn:hover::before {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.notes-imgbtn {
+  width: 75px;
+  height: 75px;
+  text-decoration: none;
+  border: none;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.notes-imgbtn:before {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+.notes-imgbtn:hover {
+  transform: scale(1.1);
+}
+.notes-imgbtn:hover::before {
+  opacity: 1;
+}
+.notes-imgbtn-dn {
+  display: none;
+}
+.notes-img {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #afb1b6;
+  border-radius: 10px;
+}/*# sourceMappingURL=collection.component.css.map */

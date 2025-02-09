@@ -1,0 +1,91 @@
+.index__login {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1360px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.index__logo {
+  left: 95px;
+  width: 589px;
+  height: 388px;
+}
+.index__content {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.index__bigTitle {
+  font-family: "Mulish", sans-serif;
+}
+.index__title {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+  color: rgb(97, 100, 107);
+}
+.index__win {
+  font-family: "Mulish", sans-serif;
+  width: 325px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-family: "Mulish", sans-serif;
+  border: 2px solid rgb(97, 100, 107);
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+  padding-left: 10px;
+}
+.index__btn {
+  display: block;
+  margin-top: 30px;
+}
+.index__bigTitle {
+  font-size: 30px;
+}
+
+.indexbar {
+  margin-left: 270px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 15px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sidebar-element {
+  font-size: 18px;
+}
+
+.indexbar {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 22px;
+}/*# sourceMappingURL=login.component.css.map */
